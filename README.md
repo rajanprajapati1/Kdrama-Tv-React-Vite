@@ -1,85 +1,77 @@
-# React + Vite
+# K-Drama Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a K-Drama website built using Vite and React. It provides an immersive platform for users to explore, discover, and enjoy Korean dramas.
 
-Currently, two official plugins are available:
+link :::>   https://app.netlify.com/sites/jade-crumble-576df1/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
+- Browse a wide variety of Korean dramas
+- View detailed information about each drama, including cast, episodes, and ratings
+- Search for your favorite dramas
+- Bookmark dramas to create a personalized watchlist
 
+## Demo
 
+[Live Demo](#) <!-- Add a link to your live demo once it's deployed -->
 
+## Getting Started
 
+### Prerequisites
 
+Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your machine.
 
-<!-- 
+### Installation
 
-import React, { useState } from 'react'
+1. Clone the repository:
 
-const App = () => {
-    const [EditIndex,SetEditIndex] = useState(-1);
-    const [InputData, SetInputData] = useState({
-        Name: "",
-        Email: "",
-        Password:"",
-    })
-    const [DataBase,SetDataBase] = useState([]);
-const HandleInput =(Inputsvalue,value)=>{
- SetInputData((prev)=>({...prev,[Inputsvalue]:value}))
-}
-    const HandleSubmitForm = (e) =>{
-          e.preventDefault();
-          if(!InputData.Password || !InputData.Email ||!InputData.Name){
-            alert("empty")
-          }else if(EditIndex !== -1){
-            const editdata = [...DataBase];
-            editdata[EditIndex] = InputData;
-            SetDataBase(editdata);
-            SetEditIndex(-1);
-            SetInputData({
-                Name: " ",
-                Email: " ",
-                Password: " ",
-            })
-          }
-          else{
-            SetDataBase((prevvalue)=>[...prevvalue,InputData])
-            SetInputData({
-                Name: " ",
-                Email: " ",
-                Password: " ",
-            })
-          }
-         
-    }
-    const HandleDelete = (index) =>{
-        const filterdata = DataBase.filter((value,i)=>i !== index);
-        SetDataBase(filterdata)
-      }
-      const HandleEdit = (index)=>{
-         SetInputData(DataBase[index]);
-         SetEditIndex(index)
-      }
- 
-    return (
-        <div>
-            <h1>Todo App</h1>
-            <form  onSubmit={HandleSubmitForm} >
-                Name <input type="text" placeholder='name' name='Name' value={InputData.Name} onChange={(e)=>HandleInput('Name',e.target.value)} /><br />
-                Email <input type="email" placeholder='email' name='Email'  value={InputData.Email}  onChange={(e)=>HandleInput('Email',e.target.value)}/><br />
-                Password <input type="password" placeholder='password' name='Password' value={InputData.Password}  onChange={(e)=>HandleInput('Password',e.target.value)}/>
-                <br />
-                <br />
-                <button type='submit'>{EditIndex !== -1 ? "edit Data save" : "Add Data" }</button>
-            </form>
-            <ul>
-                {DataBase?.map((value,i)=>{
-                    return <li key={i}>{value.Name}  :  {value.Password}  : {value.Email} <button onClick={()=>HandleEdit(i)}>Edit</button> <button onClick={()=>HandleDelete(i)}>Delete</button></li>
-                })}
-            </ul>
-        </div>
-    )
-}
+```bash
+git clone https://github.com/your-username/kdrama-website.git
+```
 
-export default App -->
+2. Navigate to the project directory:
+
+```bash
+cd kdrama-website
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+### Configuration
+
+Obtain any necessary API keys for data sources.
+
+Create a `.env` file in the root of your project and add the required environment variables:
+
+```env
+REACT_APP_API_KEY=your_api_key
+```
+
+Replace `your_api_key` with the API key you obtained.
+
+### Usage
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Visit (https://app.netlify.com/sites/jade-crumble-576df1/) to view the application.
+
+## Technologies Used
+
+- Vite
+- React
+
+## Acknowledgments
+
+- [External Api ] for providing data about Korean dramas
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
