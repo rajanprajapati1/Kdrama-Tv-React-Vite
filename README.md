@@ -2,7 +2,7 @@
 
 This project is a K-Drama website built using Vite and React. It provides an immersive platform for users to explore, discover, and enjoy Korean dramas.
 
-link :::>   https://app.netlify.com/sites/jade-crumble-576df1/
+link :::>   [https://app.netlify.com/sites/jade-crumble-576df1/](https://jade-crumble-576df1.netlify.app/)
 
 ## Features
 
@@ -61,7 +61,7 @@ Run the development server:
 npm run dev
 ```
 
-Visit (https://app.netlify.com/sites/jade-crumble-576df1/) to view the application.
+Visit ([https://app.netlify.com/sites/jade-crumble-576df1/](https://jade-crumble-576df1.netlify.app/)) to view the application.
 
 ## Technologies Used
 
