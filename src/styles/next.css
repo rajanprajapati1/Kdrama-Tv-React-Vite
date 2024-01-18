@@ -1,0 +1,281 @@
+/* @font-face {
+    font-family: mono;
+    src: url("../assets/fonts/monof55.ttf");
+  } */
+
+  .singledrama_Page{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    background-color: rgba(101, 101, 101, 0.527);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .singledrama_Page .single_details{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    gap: 1rem;
+  }
+  .single_details .image_s{
+    flex-basis: 20%;
+  }
+  .single_details .single_info{
+    flex-basis: 40%;
+    /* background-color: blueviolet; */
+    height: 64vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+  }
+  .single_info h2{
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .single_info h3{
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+  .single_info h4{
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+  .single_info h5{
+    font-size: 18px;
+  }
+  .single_info .tags{
+    display: flex;
+    gap: 0.5rem;
+  }
+  .single_info .tags button{
+    padding: 10px 25px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    backdrop-filter: blur(15px);
+    background-color: rgba(57, 56, 56, 0);
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+  }
+  .single_info p {
+    font-weight: 800;
+    color: rgb(12, 12, 12);
+    letter-spacing: 1px;
+  }
+  .single_details .image_s img{
+    width: 300px;
+    border-radius: 8px;
+}
+
+  .image_overlay_new{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(101, 101, 101, 0.527);
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image_overlay_new img{
+    width: 1000px;
+  }
+
+  .hr{
+    width: 60%;
+    height: 2px;
+    border: none;
+    outline: none;
+    background-color: rgba(198, 190, 190, 0.893);
+  }
+  .others_btn{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  .others_btn button{
+    padding: 12px 40px;
+    gap: 15px;
+    margin: 0 10px 0 0px;
+    border-radius:5px;
+    font-size: 1rem;
+    background-color: rgba(76, 76, 76, 0.452);
+    text-align: center;
+    border: 2px solid rgba(33, 32, 32, 0.392);
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+  }
+  .others_btn .btn_first{
+    display: flex;
+    align-items: center;
+  }
+
+  .episodes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    height: auto;
+  }
+  .episodes h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 2rem;
+    margin-left: -55rem;
+    color: white;
+  }
+  .episode_Section{
+    width: 88%;
+    margin: 0 auto;
+    height: auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .EpisodeCard{
+    width: 300px;
+    height: 100px;
+    background-color: rgba(198, 190, 190, 0.893);
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    color: black;
+  }
+  .EpisodeCard button{
+    padding: 4px;
+    border: none;
+    background-color: darkgray;
+    border: 2px solid rgba(198, 190, 190, 0.893);
+    border-radius: 50%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .EpisodeCard button:hover{
+    scale: 1.2;
+  }
+  .player{
+    width: 100%;
+    overflow: hidden;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+  }
+  .player .reactplayer{
+    width: 900px;
+    height: 500px;
+    background-color:lightgoldenrodyellow;
+    border-radius: 5px;
+    margin: 1rem 0;
+  }
+  .reactplayer .video_details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .video_details h1{
+    margin-top:15px;
+    font-size: 2rem;
+  }
+  .server_Details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .Searchresults{
+    width: 80%;
+    background:linear-gradient(to left ,rgb(33, 224, 167),rgb(14, 220, 231));
+    height: 50vh;
+    filter: blur(155px);
+    justify-content: center;
+    z-index: -999;
+    margin: 8rem 135px;
+    position: fixed;
+  }
+   .main_bar{
+    width: 60%;
+    height: 105vh;
+    background-color: rgba(123, 123, 119, 0.122);
+    backdrop-filter: blur(15px);
+    margin: 0 auto;
+    z-index: 45;
+    overflow: hidden;
+  }
+  .main_bar h1{
+    font-size: 1.5rem;
+    margin: 8px 25px;
+  }
+  .flex_search_results{
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+  }
+  
+  .flex_search_results .Card{
+    margin: 15px auto;
+  }
+  .pagination{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pagination button{
+    padding: 15px 45px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 15px;
+    border: none;
+    background-color: white;
+    color: black;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  .notfound{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .notfound h1{
+    font-size: 3rem;
+  }
